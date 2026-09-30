@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  relay-server:
+    build: .
+    container_name: e2ee-relay-server
+    ports:
+      - "65432:65432"
+    volumes:
+      - ./server_data:/app
+    restart: unless-stopped
