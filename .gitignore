@@ -1,1 +1,25 @@
-/venv
+# Python
+__pycache__/
+*.pyc
+
+# Private keys and per-device data (never commit)
+device_cache/
+cache_*/
+
+# Databases (test and server data)
+*.db
+*.db-journal
+*.sqlite3
+
+# Logs and builds
+crash_log.txt
+.buildozer/
+bin/
+*.apk
+*.aab
+
+# Environments and editor
+venv/
+.venv/
+.env
+.vscode/
